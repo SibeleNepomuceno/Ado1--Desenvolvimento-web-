@@ -61,7 +61,7 @@ public class PesquisarProduto extends HttpServlet {
 
         request.setAttribute("produtos", produtos);
 
-        String url = "/ProdutosCakeWeb.jsp";
+        String url = "/WEB-INF/ProdutosCakeWeb.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
